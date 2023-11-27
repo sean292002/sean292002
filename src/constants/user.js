@@ -14,7 +14,7 @@ import bot8 from '../images/bot/footlocker_checkout.png';
 import champions from '../images/champions/cl.jpg';
 import soccer from '../images/champions/soccer.png';
 import art from '../images/art/art.png';
-import resy1 from '../images/resy/Resy.png';
+import resy1 from '../images/resy/resy.png';
 import resy2 from '../images/resy/resy2.png';
 import resy3 from '../images/resy/resy3.png';
 import resy4 from '../images/resy/resy_email.png';
