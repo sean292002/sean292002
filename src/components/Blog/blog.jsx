@@ -11,8 +11,10 @@ class Blogs extends Component {
   componentDidMount() {
     // Replace with your Medium RSS feed URL
     const mediumRssFeed = 'https://medium.com/feed/@seanwiryadi16';
+    // https://www.toptal.com/developers/feed2json/convert?url=
+    // https://api.rss2json.com/v1/api.json?rss_url=
 
-    axios.get(`https://api.rss2json.com/v1/api.json?rss_url=${mediumRssFeed}`)
+    axios.get(`https://www.toptal.com/developers/feed2json/convert?url=${mediumRssFeed}`)
       .then((response) => {
         this.setState({ blogs: response.data.items });
       })
