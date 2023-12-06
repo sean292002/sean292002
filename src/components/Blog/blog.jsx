@@ -14,12 +14,8 @@ class Blogs extends Component {
     // https://www.toptal.com/developers/feed2json/convert?url=
     // https://api.rss2json.com/v1/api.json?rss_url=
 
-    axios.get(`https://www.toptal.com/developers/feed2json/convert?url=${mediumRssFeed}`, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0',
-      }
-    })
-    .then((response) => {
+    axios.get(`https://www.convertjson.com/cgi-bin/url-to-json.php?callback=loadDataAndRun&url=${mediumRssFeed}`)
+      .then((response) => {
         this.setState({ blogs: response.data.items });
       })
       .catch((error) => {
