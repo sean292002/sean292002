@@ -14,7 +14,7 @@ class Blogs extends Component {
     // https://www.toptal.com/developers/feed2json/convert?url=
     // https://api.rss2json.com/v1/api.json?rss_url=
 
-    axios.get(`https://www.convertjson.com/cgi-bin/url-to-json.php?callback=loadDataAndRun&url=${mediumRssFeed}`)
+    axios.get(`https://api.rss2json.com/v1/api.json?rss_url=${mediumRssFeed}`)
       .then((response) => {
         this.setState({ blogs: response.data.items });
       })
