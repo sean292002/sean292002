@@ -40,7 +40,7 @@ class Blogs extends Component {
                       <h3 className="blog-title">{blog.title}</h3>
                       <a href={blog.link} target="_blank" rel="noopener noreferrer">
                           Read more
-                          {blog.description.toString().match(/<img[^>]+src="([^">]+)"/)}
+                          {blog.description.toString().match(/<img[^>]+src="([^">]+)"/)[0]}
                       </a>
                     </div>
                 ))}

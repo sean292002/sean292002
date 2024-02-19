@@ -156,7 +156,7 @@ const INFO = {
 					proficiency: "Proficient"
 				},
 				{
-					title: "C",
+					title: "C++",
 					logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png",
 					proficiency: "Proficient"
 				},
@@ -188,7 +188,47 @@ const INFO = {
 			]
 		},
 		{
-			title: "Analytics",
+			"title": "Tools",
+			"stacks": [
+			  {
+				"title": "AWS",
+				"logo": "https://www.cdnlogo.com/logos/a/19/aws.svg",
+				"proficiency": "Proficient"
+			  },
+			  {
+				"title": "GCP",
+				"logo": "https://www.cdnlogo.com/logos/g/75/google-cloud.svg",
+				"proficiency": "Proficient"
+			  },
+			  {
+				"title": "NodeJS",
+				"logo": "https://www.cdnlogo.com/logos/n/94/nodejs-icon.svg",
+				"proficiency": "Proficient"
+			  },
+			  {
+				"title": "Flask",
+				"logo": "https://www.cdnlogo.com/logos/f/50/flask.svg",
+				"proficiency": "Proficient"
+			  },
+			  {
+				"title": "Figma",
+				"logo": "https://www.cdnlogo.com/logos/f/54/figma.svg",
+				"proficiency": "Proficient"
+			  },
+			  {
+				"title": "Canva",
+				"logo": "https://www.cdnlogo.com/logos/c/41/canva.svg",
+				"proficiency": "Proficient"
+			  },
+			  {
+				"title": "Microsoft Office",
+				"logo": "https://www.cdnlogo.com/logos/m/48/microsoft-office-2013-and-wordmark.svg",
+				"proficiency": "Proficient"
+			  }
+			]
+		  },		  
+		{
+			title: "Frameworks/Libraries",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			stacks: [
 				{
@@ -225,32 +265,6 @@ const INFO = {
 					title: "Scikitlearn",
 					logo: "https://www.cdnlogo.com/logos/t/73/tableau-software.svg",
 					proficiency: "Proficient"
-				}
-			]
-		},
-		{
-			title: "Tools",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			stacks: [
-				{
-					title: "NodeJS",
-					logo: "https://www.cdnlogo.com/logos/n/94/nodejs-icon.svg",
-					proficiency: "Proficient"
-				},
-				{
-					title: "GCP",
-					logo: "https://www.cdnlogo.com/logos/g/75/google-cloud.svg",
-					proficiency: "Proficient"
-				},
-				{
-					title: "AWS",
-					logo: "https://www.cdnlogo.com/logos/a/19/aws.svg",
-					proficiency: "Proficient"
-				},
-				{
-					title: "Flask",
-					logo: "https://www.cdnlogo.com/logos/f/50/flask.svg",
-					proficiency: "Proficient"
 				},
 				{
 					title: "Beautiful Soup",
@@ -262,16 +276,6 @@ const INFO = {
 					logo: "https://www.cdnlogo.com/logos/t/73/tableau-software.svg",
 					proficiency: "Proficient"
 				},
-				{
-					title: "Figma",
-					logo: "https://www.cdnlogo.com/logos/f/54/figma.svg",
-					proficiency: "Proficient"
-				},
-				{
-					title: "Canva",
-					logo: "https://www.cdnlogo.com/logos/c/41/canva.svg",
-					proficiency: "Proficient"
-				}
 			]
 		},
 		{
