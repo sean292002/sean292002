@@ -35,7 +35,7 @@ class Blogs extends Component {
                 {this.state.blogs.map((blog) => (
                     <div key={blog.guid} className="blog-card">
                       <div className='blog-img-container'>
-                        <img className="blog-img" src={blog.thumbnail} alt="Blog Thumbnail" />
+                        <img className="blog-img" src={blog.description.toString().match(/<img[^>]+src="([^">]+)"/)} alt="Blog Thumbnail" />
                       </div>
                       <h3 className="blog-title">{blog.title}</h3>
                       <a href={blog.link} target="_blank" rel="noopener noreferrer">
