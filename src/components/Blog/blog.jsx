@@ -25,30 +25,34 @@ class Blogs extends Component {
 
   render() {
     return (
-      <section id="blogs" className="container">
-        <div className="section-title">
-            <h4 className="header-sub-title">Blogs</h4>
-            <h5 className="header-description-title">Insights and Stories from My Journey</h5>
-        </div>
-        <div className='medium-blogs'>
-            <div className="blog-cards">
-                {this.state.blogs.map((blog) => (
-                    <div key={blog.guid} className="blog-card">
-                      <div className='blog-img-container'>
-                        <img className="blog-img" src={blog.description.toString().match(/<img[^>]+src="([^">]+)"/)} alt="Blog Thumbnail" />
-                      </div>
-                      <h3 className="blog-title">{blog.title}</h3>
-                      <a href={blog.link} target="_blank" rel="noopener noreferrer">
-                          Read more
-                          {blog.description.toString().match(/<img[^>]+src="([^">]+)"/)[0]}
-                      </a>
-                    </div>
-                ))}
+        <section id="blogs" className="container">
+            <div className="section-title">
+                <h4 className="header-sub-title">Blogs</h4>
+                <h5 className="header-description-title">Insights and Stories from My Journey</h5>
             </div>
-        </div>
-      </section>
+            <div className='medium-blogs'>
+                <div className="blog-cards">
+                    {this.state.blogs.map((blog) => {
+                        const regex = /<img[^>]+src="([^">]+)"/;
+                        const match = blog.description.match(regex);
+                        const imageUrl = match ? match[1] : ''; // If no image found, fallback to an empty string or a default image URL
+                        return (
+                            <div key={blog.guid} className="blog-card">
+                                <div className='blog-img-container'>
+                                    <img className="blog-img" src={imageUrl} alt="Blog Thumbnail" />
+                                </div>
+                                <h3 className="blog-title">{blog.title}</h3>
+                                <a href={blog.link} target="_blank" rel="noopener noreferrer">
+                                    Read more
+                                </a>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+        </section>
     );
-  }
+}
 }
 
 export default Blogs;
