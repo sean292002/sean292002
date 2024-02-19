@@ -17,6 +17,7 @@ class Blogs extends Component {
     axios.get(`https://api.rss2json.com/v1/api.json?rss_url=${mediumRssFeed}`)
       .then((response) => {
         this.setState({ blogs: response.data.items });
+        console.log(blog.description.toString().match(/<img[^>]+src="([^">]+)"/))
       })
       .catch((error) => {
         console.error('Error fetching Medium blogs:', error);
