@@ -181,8 +181,8 @@ const INFO = {
 					proficiency: "Proficient"
 				},
 				{
-					title: "React",
-					logo: "https://www.cdnlogo.com/logos/r/63/react.svg",
+					title: "LaTeX",
+					logo: "https://www.cdnlogo.com/logos/l/28/latex.svg",
 					proficiency: "Proficient"
 				}
 			]
@@ -231,6 +231,11 @@ const INFO = {
 			title: "Frameworks/Libraries",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			stacks: [
+				{
+					title: "React",
+					logo: "https://www.cdnlogo.com/logos/r/63/react.svg",
+					proficiency: "Proficient"
+				},
 				{
 					title: "NumPy",
 					logo: "https://www.cdnlogo.com/logos/n/81/numpy.svg",
