@@ -46,6 +46,9 @@ const INFO = {
 			slug: "automation",
 			description:
 				"I developed an advanced automation program specifically designed to facilitate seamless purchases of limited-edition sneakers and concert tickets.\nThis program was significantly enhanced by integrating multi-threading techniques, which improved its performance, along with the use of proxies and captcha bypass methods to optimize functionality.\nAdditionally, I implemented robust error-handling mechanisms within the software to ensure high success rates, thereby making it a reliable tool for users seeking to acquire these highly sought-after items.",
+			moreinfo: [
+				{ url: "https://github.com/sean292002/FootlockerIndonesiaBot", text: "Github Code - Footlocker" }
+			],
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png","https://www.cdnlogo.com/logos/m/78/mysql.svg"],
 			img: bot1,
 			linkText: "View Project",
