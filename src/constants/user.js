@@ -21,7 +21,10 @@ import resy4 from '../images/resy/resy_email.png';
 import site1 from '../images/site/react.png';
 import fileart from "../constants/Capstone_Project_Sean_Wiryadi.pdf";
 import soccerpy from "../constants/championsleague.ipynb";
-
+import nlp from '../images/nlp/nlp.png';
+import music1 from '../images/music/music.png';
+import music2 from '../images/music/actual.png';
+import music3 from '../images/music/prediction.png';
 
 const INFO = {
 	projects: [
@@ -70,40 +73,75 @@ const INFO = {
 				resy2,resy3,resy4
 			]
 		},
+		// {
+		// 	title: "Football Champions League Analysis",
+		// 	slug: "champions-league",
+		// 	description:
+		// 		"In my project, I focused on identifying the top forwards in the Champions League season for 2023-2024, analyzing them based on a variety of factors.\nThe initial step involved scraping data from FBRef.com, which I then meticulously cleaned, specifically filtering for forwards.\nTo simplify the complex dataset, I first applied Principal Component Analysis (PCA) to reduce the number of factors. This was followed by employing KMeans clustering, guided by the Kaiser criterion, which effectively categorized the forwards into two distinct groups.\nThe crux of my analysis was the development of an index, derived from the weightages of each factor in the PCA. This index served as a benchmark to rank the players, with the highest index indicating the most impactful player in terms of their overall contribution to the Champions League this season.",
+		// 	moreinfo: [
+		// 			{ url: soccerpy, text: "Champions League Code" },
+		// 			{ url: soccerpy, text: "Champions League Data Set" },
+		// 			{ url: soccerpy, text: "Champions League Analysis" }
+		// 		  ],
+		// 	logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png","https://www.cdnlogo.com/logos/m/78/mysql.svg"],
+		// 	img: soccer,
+		// 	linkText: "View Project",
+		// 	link: "/project/champions-league",
+		// 	images: [
+		// 		soccer
+		// 	]
+		// },
+		// {
+		// 	title: "Art Preference Analysis",
+		// 	slug: "capstone",
+		// 	description:
+		// 		"In my project, I aimed to understand art preferences based on a range of factors. This involved cleaning a dataset with missing values, analyzing art ratings across different styles, and exploring gender-based preferences. I utilized regression modeling to predict preferences influenced by energy levels and demographic details. Techniques like KMeans clustering and Principal Component Analysis (PCA) were also applied to deepen the analysis. The project was rounded off with a logistic regression model, providing insights into how these various factors impact art preferences.",
+		// 	moreinfo: [
+		// 		{ url: fileart, text: "Art Preference PDF" },
+		// 		{ url: fileart, text: "Art Preference Data Set"},
+		// 		{ url: fileart, text: "Art Preference Code" }
+		// 	  ],
+		// 	logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"],
+		// 	img: art,
+		// 	linkText: "View Project",
+		// 	link: "/project/capstone",
+		// 	images: [
+		// 		art,
+		// 	]
+		// },
 		{
-			title: "Football Champions League Analysis",
-			slug: "champions-league",
+			title: "Automatic Music Transcription",
+			slug: "music",
 			description:
-				"In my project, I focused on identifying the top forwards in the Champions League season for 2023-2024, analyzing them based on a variety of factors.\nThe initial step involved scraping data from FBRef.com, which I then meticulously cleaned, specifically filtering for forwards.\nTo simplify the complex dataset, I first applied Principal Component Analysis (PCA) to reduce the number of factors. This was followed by employing KMeans clustering, guided by the Kaiser criterion, which effectively categorized the forwards into two distinct groups.\nThe crux of my analysis was the development of an index, derived from the weightages of each factor in the PCA. This index served as a benchmark to rank the players, with the highest index indicating the most impactful player in terms of their overall contribution to the Champions League this season.",
+				"In my project, I focused on developing a deep learning model to automatically transcribe piano music, analyzing the process through various stages. The initial step involved collecting and preprocessing the data using the Constant-Q Transform (CQT), which was then meticulously normalized to ensure consistency. To manage the complex dataset, I implemented Principal Component Analysis (PCA) for dimensionality reduction, simplifying the data before applying Deep Neural Networks (DNN) and Recurrent Neural Networks (RNNs), specifically Long Short-Term Memory (LSTM) networks. The key aspect of my analysis was applying regularization techniques, such as Dropout and early stopping, to prevent overfitting and enhance model performance. The culmination of my work was achieving 40% accuracy with the DNN model and 2% accuracy with the LSTM model, where onsets were correctly detected, demonstrating the potential of deep learning in music transcription.",
 			moreinfo: [
-					{ url: soccerpy, text: "Champions League Code" },
-					{ url: soccerpy, text: "Champions League Data Set" },
-					{ url: soccerpy, text: "Champions League Analysis" }
-				  ],
-			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png","https://www.cdnlogo.com/logos/m/78/mysql.svg"],
-			img: soccer,
+				{ url: "https://github.com/shriyakalakata/automatic-piano-music-transcription", text: "Program Code" },
+				{ url: "https://github.com/shriyakalakata/automatic-piano-music-transcription/blob/main/ADS%20Final%20Project.pdf", text: "Presentation" }
+			],
+			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"],
+			img: music1,
 			linkText: "View Project",
-			link: "/project/champions-league",
+			link: "/project/music",
 			images: [
-				soccer
+				music1,music2,music3
 			]
 		},
 		{
-			title: "Art Preference Analysis",
-			slug: "capstone",
+			title: "Natural Language Processing - Information Retrieval",
+			slug: "nlp",
 			description:
-				"In my project, I aimed to understand art preferences based on a range of factors. This involved cleaning a dataset with missing values, analyzing art ratings across different styles, and exploring gender-based preferences. I utilized regression modeling to predict preferences influenced by energy levels and demographic details. Techniques like KMeans clustering and Principal Component Analysis (PCA) were also applied to deepen the analysis. The project was rounded off with a logistic regression model, providing insights into how these various factors impact art preferences.",
+				"In my project, I focused on constructing a knowledge graph from unstructured text using natural language processing (NLP) techniques, analyzing the process through various stages. The initial step involved collecting and preprocessing the data, which included stop word removal, TFIDF (Term Frequency-Inverse Document Frequency) calculation, cosine similarity measurement, lemmatization, and normalization to ensure consistency and relevance. To manage the complex dataset, I implemented Principal Component Analysis (PCA) for dimensionality reduction, simplifying the data before building the knowledge graph. The key aspect of my analysis was evaluating the model on earnings call transcripts from the Hugging Face dataset, achieving 59.40% accuracy, 18.18% recall, 71.43% precision, and an F1-Score of 28.99%, demonstrating the effectiveness of NLP techniques in information retrieval.",
 			moreinfo: [
-				{ url: fileart, text: "Art Preference PDF" },
-				{ url: fileart, text: "Art Preference Data Set"},
-				{ url: fileart, text: "Art Preference Code" }
-			  ],
+					{ url: "https://github.com/pattssun/knowledge-graph", text: "Program Code" },
+					{ url: "https://github.com/pattssun/knowledge-graph/blob/main/CS469_Group21_Presentation.pdf", text: "Presentation" },
+					{ url: "https://github.com/pattssun/knowledge-graph/blob/main/Group21_Project_Report.pdf", text: "Final Report" }
+				  ],
 			logo: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"],
-			img: art,
+			img: nlp,
 			linkText: "View Project",
-			link: "/project/capstone",
+			link: "/project/nlp",
 			images: [
-				art,
+				nlp
 			]
 		},
 		{
